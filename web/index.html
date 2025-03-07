@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quảng Đà Hotel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Styles.css">
+    </head>
+    <body>
+
+
+        <!--Header-->
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top shadow-sm">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo --> 
+                <div class="header-logo">
+                    <img src="images/QuangDaLogo.jpg" alt="Quảng Đà Hotel" class="logo">
+                </div>
+
+                <!-- Menu -->
+                <div class="header-service" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Phòng & Dịch Vụ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ưu Đãi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-login d-flex">
+                    <a href="#" class="btn-custom me-2">Đăng nhập</a>
+                    <a href="#" class="btn-custom me-2">Đăng ký</a>
+                    <a href="#" class="btn-custom btn-primary-custom">Đặt Phòng Ngay</a>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <header class="hero position-relative">
+            <!--            image-->
+            <div id="hotelCarousel" class="carousel slide position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Hotel1.png" class="d-block w-100" alt="Khách sạn 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel2.png" class="d-block w-100" alt="Khách sạn 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel3.png" class="d-block w-100" alt="Khách sạn 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel4.png" class="d-block w-100" alt="Khách sạn 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel5.png" class="d-block w-100" alt="Khách sạn 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel6.png" class="d-block w-100" alt="Khách sạn 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel7.png" class="d-block w-100" alt="Khách sạn 7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Hotel8.png" class="d-block w-100" alt="Khách sạn 8">
+                    </div>
+                </div>
+                <!-- Nút điều hướng -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Nội dung đặt phòng -->
+            <div class="container text-center position-relative z-3">
+                <h2 class="fw-bold text-white">Đặt Phòng Khách Sạn Cao Cấp</h2>
+                <p class="text-white">Trải nghiệm kỳ nghỉ hoàn hảo với dịch vụ đẳng cấp 5 sao.</p>
+                <div class="search-box bg-white p-4 rounded shadow">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <input type="date" class="form-control" placeholder="Ngày nhận phòng">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control" placeholder="Ngày trả phòng">
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-select">
+                                <option selected>Loại phòng</option>
+                                <option>Standard</option>
+                                <option>Deluxe</option>
+                                <option>Suite</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-select">
+                                <option selected>Số lượng khách</option>
+                                <option>1 người</option>
+                                <option>2 người</option>
+                                <option>3 người</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <!--room-->
+        <section class="rooms container my-5">
+            <h2 class="text-center fw-bold mb-4">Phòng Nổi Bật</h2>
+            <div class="row g-4">
+                <!-- Phòng Standard -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <img src="images/StandardRoom.png" class="card-img-top" alt="Phòng Standard">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Phòng Standard</h5>
+                            <p class="card-text text-muted">Giá từ: <strong>1.500.000 VND/đêm</strong></p>
+                            <a href="#" class="btn btn-primary">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phòng Deluxe -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-sm border-0">
+                        <img src="images/DeluxeRoom.png" class="card-img-top" alt="Phòng Deluxe">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Phòng Deluxe</h5>
+                            <p class="card-text text-muted">Giá từ: <strong>2.500.000 VND/đêm</strong></p>
+                            <a href="#" class="btn btn-primary">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phòng Suite -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="card shadow-sm border-0">
+                        <img src="images/SuiteRoom.png" class="card-img-top" alt="Phòng Suite">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Phòng Suite</h5>
+                            <p class="card-text text-muted">Giá từ: <strong>3.500.000 VND/đêm</strong></p>
+                            <a href="#" class="btn btn-primary">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
